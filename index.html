@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ali Eren Karateke</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <h1>Ali Eren Karateke</h1>
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact Me</a>
+      </nav>
+      <div class="hamburger" id="hamburger"><i class="fas fa-bars"></i></div>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi, I am Ali Eren Karateke. I am a computer programming student at Dicle University. 
+      This site is a simple place where I share my work. 
+      I am a curious person. I have learned a lot in many areas lately. 
+      I continue to learn. My current focus is games. 
+      I am interested in game development. I don't know what will happen in the future, 
+      but I can shape the future with what I do now. I'm just trying. I think that's enough.
+      <br>
+      <br>
+      My Skills
+      <br>
+      <br>
+      
+      <ul>
+        <li>Unreal Engine 5</li>
+        <li>Unity</li>
+        <li>C++ , C# and Python </li>
+        <li>3D modeling with Blender</li>
+        <li>Blender geometry nodes</li>
+        <li>Adobe Substance 3D Apps</li>
+        <li>Adobe Photoshop</li>
+        <li>Davinci Resolve</li>
+        <li>HTML, CSS, JavaScript</li>
+      </ul>
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid" id="projectsGrid">
+      <!-- JavaScript buraya proje kartlarını otomatik ekleyecek -->
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: alierenkarateke.offical@gmail.com</p>
+    <div class="social-icons" style="margin-top: 1rem;">
+      <a href="https://www.linkedin.com/in/ali-eren-karateke-02b582357/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/alierenkarateke" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.instagram.com/alierenkarakedi/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ali Eren Karateke. All rights reserved</p>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal" id="projectModal">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal()">Close</button>
+      <h3 id="modalTitle"></h3>
+      <div class="modal-body">
+        <div id="modalContent"></div>
+        <img id="modalImage" style="display:none;" />
+        <video id="modalVideo" controls style="display:none;"></video>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
